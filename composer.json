@@ -1,7 +1,10 @@
 {
     "name": "pablodip/travis_php_test",
     "require": {
-        "phpunit/phpunit": "^5.4"
+        "phpunit/phpunit": "^5.4",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-apcu": "*"
     },
     "authors": [
         {
