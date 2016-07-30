@@ -1,0 +1,13 @@
+{
+    "name": "pablodip/travis_php_test",
+    "require": {
+        "phpunit/phpunit": "^5.4"
+    },
+    "authors": [
+        {
+            "name": "pablodip",
+            "email": "pablodip@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
