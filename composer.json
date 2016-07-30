@@ -4,7 +4,8 @@
         "phpunit/phpunit": "^5.4",
         "ext-curl": "*",
         "ext-json": "*",
-        "ext-apcu": "*"
+        "ext-apcu": "*",
+        "ext-intl": "*"
     },
     "authors": [
         {
