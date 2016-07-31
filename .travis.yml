@@ -1,3 +1,6 @@
+services:
+  - mongodb
+
 language: php
 
 php:
@@ -7,6 +10,8 @@ before_install:
   - composer self-update
   - echo "yes" | pecl install apcu-4.0.11
   - echo "autodetect" | pecl install imagick
+  - pecl install mongo
+  - pecl install mongodb
 
 install:
   - composer install
