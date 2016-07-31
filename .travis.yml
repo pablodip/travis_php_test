@@ -3,7 +3,9 @@ addons:
     sources:
       - mongodb-3.0-precise
     packages:
-      - mongodb-org
+      - mongodb-org-server
+      - mongodb-org-shell
+      - mongodb-org-tools
 
 language: php
 
@@ -12,6 +14,7 @@ php:
 
 before_install:
   - mongod --version
+  - mongodump --version
   - INI_FILE=~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini;
   - echo memory_limit = -1 >> $INI_FILE;
   - echo session.gc_probability = 0 >> $INI_FILE;
