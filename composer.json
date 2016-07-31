@@ -5,7 +5,8 @@
         "ext-curl": "*",
         "ext-json": "*",
         "ext-apcu": "*",
-        "ext-intl": "*"
+        "ext-intl": "*",
+        "ext-imagick": "*"
     },
     "authors": [
         {

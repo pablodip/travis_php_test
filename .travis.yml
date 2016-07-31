@@ -6,6 +6,7 @@ php:
 before_install:
   - composer self-update
   - echo yes | pecl install apcu-4.0.11
+  - pecl install imagick
 
 install:
   - composer install
