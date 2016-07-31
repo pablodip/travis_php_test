@@ -3,7 +3,7 @@ addons:
     sources:
       - mongodb-3.0-precise
     packages:
-      - mongodb-org-server
+      - mongodb-org
 
 language: php
 
