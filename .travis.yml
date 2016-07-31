@@ -7,6 +7,10 @@ php:
   - 5.6
 
 before_install:
+  - INI_FILE=~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini;
+  - echo memory_limit = -1 >> $INI_FILE;
+  - echo session.gc_probability = 0 >> $INI_FILE;
+  - then echo opcache.enable_cli = 1 >> $INI_FILE;
   - composer self-update
   - echo "yes" | pecl install apcu-4.0.11
   - echo "autodetect" | pecl install imagick
