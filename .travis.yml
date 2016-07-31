@@ -7,6 +7,7 @@ php:
   - 5.6
 
 before_install:
+  - mongod --version
   - INI_FILE=~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini;
   - echo memory_limit = -1 >> $INI_FILE;
   - echo session.gc_probability = 0 >> $INI_FILE;
