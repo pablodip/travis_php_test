@@ -22,7 +22,6 @@ before_install:
   - echo "yes" | pecl install apcu-4.0.11
   - echo "autodetect" | pecl install imagick
   - echo "yes" | pecl install mongo
-  - pecl install mongodb
 
 install:
   - composer install
