@@ -12,8 +12,12 @@ php:
 
 before_install:
   - sudo apt-get install -y mongodb-org
+  - sudo apt-get install -y ffmpeg libavcodec-extra-53
+
   - mongod --version
   - mongodump --version
+  - ffmpeg --version
+
   - INI_FILE=~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini;
   - echo memory_limit = -1 >> $INI_FILE;
   - echo session.gc_probability = 0 >> $INI_FILE;
