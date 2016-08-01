@@ -11,7 +11,7 @@ php:
   - 5.6
 
 before_install:
-  - sudo apt-get install -y mongodb-org-tools
+  - sudo apt-get install -y mongodb-org
   - mongod --version
   - mongodump --version
   - INI_FILE=~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini;
