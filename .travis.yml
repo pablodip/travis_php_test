@@ -16,7 +16,7 @@ before_install:
 
   - mongod --version
   - mongodump --version
-  - ffmpeg --version
+  - ffmpeg -h
 
   - INI_FILE=~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini;
   - echo memory_limit = -1 >> $INI_FILE;
